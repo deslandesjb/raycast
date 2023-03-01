@@ -29,7 +29,7 @@ const result = convertPath(path);
 if (result !== "Wrong path.") {
   const {execSync} = require("child_process");
   execSync(`echo '${result.trim()}' | pbcopy`);
-  console.log(`Chemin converti : ${result}`);
+  console.log(`Converted path: ${result}`);
 } else {
   console.error(result);
 }
