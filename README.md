@@ -1,4 +1,4 @@
-# raycast Google Drive Script
+# Raycast Google Drive Script
 
 ## How the script works
 This script replace the Google Drive path you copied with the mac version and vice versa
