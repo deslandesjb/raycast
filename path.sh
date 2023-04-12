@@ -8,7 +8,7 @@
 # Optional parameters:
 # @raycast.icon 💊
 
-# Documentation: Converted Google Drive macOS paths into windows and vice versa
+# Documentation: Converts Google Drive macOS paths into windows and vice versa
 # @raycast.author Jb Deslandes
 
 mail="mail@mail.com"
