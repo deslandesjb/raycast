@@ -13,7 +13,7 @@
 
 mail="mail@mail.com"
 drive_mac="Shared drives"
-mac_user="userName"
+mac_user="user"
 
 active_app=$(osascript -e 'tell application "System Events" to get name of first application process whose frontmost is true')
 
@@ -30,7 +30,7 @@ if [[ "$active_app" == "Finder" ]]; then
     exit 1
   fi
 
-  converted_path="G:/Shared drives/${path#/Users/mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
+  converted_path="G:/Shared drives/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
   converted_path="${converted_path//\//\\}"
 
   echo "$converted_path" | pbcopy
@@ -40,7 +40,8 @@ else
   clipboard=$(pbpaste)
 
   if [[ $clipboard == G:* ]]; then
-    path_converted=$(echo $clipboard | sed -e "s/G:\/Shared drives\//\/Users\/mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/$drive_mac\//g" -e 's/\\/\//g')
+    path_converted=$(echo $clipboard | sed -e 's/\\/\//g' -e "s/G:\/$drive_windows\//\/Users\/$mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/$drive_mac\//g" )
+
     echo "$path_converted" | pbcopy
     echo "The path was converted and copied to clipboard."
   else
@@ -48,3 +49,5 @@ else
     exit 1
   fi
 fi
+
+
