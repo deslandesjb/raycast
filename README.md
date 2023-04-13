@@ -4,15 +4,23 @@
 If you are on the Finder and on a Google Drive folder, then convert the Mac path to a Windows path and put the converted path to the clipboard
 If you are not on the finder and you have a Google Drive link in the clipboard, convert the Windows path to Mac path
 
-## How to use it
+## How to install
 1. Install Raycast https://www.raycast.com/
-2. Open the script and replace :
-mail@mail.com with your mail address
-If your Mac is in french, replace "Shared drives" with "Drive partagés"
-![CleanShot 2023-03-01 at 11 19 29](https://user-images.githubusercontent.com/47465584/222111298-27225749-e936-450e-8b0b-bfa0274dcb66.png)
+2. Open Raycast, under Extensions create a new Script Command
+![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834834-68c5a745-4378-4bb2-9c14-60e934d7ac71.jpg)
 
-3. Open Raycast, under Extensions create a new Script Command
-![CleanShot 2023-03-01 at 11 20 06](https://user-images.githubusercontent.com/47465584/222111417-c747cf40-f40a-4f59-af6b-73d4a336bd2a.png)
-4. Then, select Bash under Template, choose a name under Title and save it. Open the created file and replace the content with the content here 
+3. Select all field as follow and save it where you want (you'll have to edit the file):
+![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834962-ea7c2e2e-0620-4030-bf69-c4c91eae4d90.jpg)
+
+4. Open the script and replace :
+
+mail@mail.com with your mail address
+
+user with the name of your mac
+
+If your Mac is in french, replace "Shared drives" with "Drive partagés"
+![CleanShot 2023-04-13 at 19 17 20](https://user-images.githubusercontent.com/47465584/231835749-2120cb4a-c55a-4482-b8dd-90d43b2ddc30.jpg)
+
+5. Save the file
 
 That's it, you can call the script using "path" 
