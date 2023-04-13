@@ -8,12 +8,13 @@
 # Optional parameters:
 # @raycast.icon 💊
 
-# Documentation: Converts Google Drive macOS paths into windows and vice versa
+# Documentation: Converted Google Drive macOS paths into windows and vice versa
 # @raycast.author Jb Deslandes
 
 mail="mail@mail.com"
-drive_mac="Shared drives"
 mac_user="user"
+drive_mac="Drive partagés"
+drive_windows="Shared drives"
 
 active_app=$(osascript -e 'tell application "System Events" to get name of first application process whose frontmost is true')
 
@@ -30,7 +31,7 @@ if [[ "$active_app" == "Finder" ]]; then
     exit 1
   fi
 
-  converted_path="G:/Shared drives/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
+  converted_path="G:/$drive_windows/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
   converted_path="${converted_path//\//\\}"
 
   echo "$converted_path" | pbcopy
@@ -49,5 +50,3 @@ else
     exit 1
   fi
 fi
-
-
