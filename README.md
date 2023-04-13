@@ -10,7 +10,7 @@ If you are not on the finder and you have a Google Drive link in the clipboard, 
 ![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834834-68c5a745-4378-4bb2-9c14-60e934d7ac71.jpg)
 
 3. Select all field as follow and save it where you want (you'll have to edit the file):
-![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834962-ea7c2e2e-0620-4030-bf69-c4c91eae4d90.jpg)
+![CleanShot 2023-04-13 at 19 20 39](https://user-images.githubusercontent.com/47465584/231836290-6743b64c-4d4d-4446-a8d5-002a7509856a.jpg)
 
 4. Open the script and replace :
 
