@@ -11,10 +11,8 @@
 # Documentation: Converted Google Drive macOS paths into windows and vice versa
 # @raycast.author Jb Deslandes
 
-mail="mail@mail.com"
-mac_user="user"
-drive_mac="Drive partagés"
-drive_windows="Shared drives"
+mail="USERNAME@datawords.com"
+mac_user="USERNAME"
 
 active_app=$(osascript -e 'tell application "System Events" to get name of first application process whose frontmost is true')
 
@@ -31,7 +29,7 @@ if [[ "$active_app" == "Finder" ]]; then
     exit 1
   fi
 
-  converted_path="G:/$drive_windows/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
+  converted_path="G:/Shared drives/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/Shared drives/}"
   converted_path="${converted_path//\//\\}"
 
   echo "$converted_path" | pbcopy
@@ -41,7 +39,7 @@ else
   clipboard=$(pbpaste)
 
   if [[ $clipboard == G:* ]]; then
-    path_converted=$(echo $clipboard | sed -e 's/\\/\//g' -e "s/G:\/$drive_windows\//\/Users\/$mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/$drive_mac\//g" )
+    path_converted=$(echo $clipboard | sed -e 's/\\/\//g' -e "s/G:\/Shared drives\//\/Users\/$mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/Shared drives\//g" )
 
     echo "$path_converted" | pbcopy
     echo "The path was converted and copied to clipboard."
