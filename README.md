@@ -14,12 +14,8 @@ If you are not on the finder and you have a Google Drive link in the clipboard, 
 
 4. Open the script and replace :
 
-mail@mail.com with your mail address
-
-user with the name of your mac
-
-If your Mac is in french, replace "Shared drives" with "Drive partagés"
-![CleanShot 2023-04-13 at 19 17 20](https://user-images.githubusercontent.com/47465584/231835749-2120cb4a-c55a-4482-b8dd-90d43b2ddc30.jpg)
+mail="my_email" with your mail address
+For example : mail="jdeslandes@datawords.com"
 
 5. Save the file
 
