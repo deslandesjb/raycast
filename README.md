@@ -10,13 +10,18 @@ If you are not on the finder and you have a Google Drive link in the clipboard, 
 ![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834834-68c5a745-4378-4bb2-9c14-60e934d7ac71.jpg)
 
 3. Select all field as follow and save it where you want (you'll have to edit the file):
-![CleanShot 2023-04-13 at 19 20 39](https://user-images.githubusercontent.com/47465584/231836290-6743b64c-4d4d-4446-a8d5-002a7509856a.jpg)
+![CleanShot 2023-05-04 at 5 17 11](https://user-images.githubusercontent.com/47465584/236252355-f94e4227-16f7-439e-81f6-57f8bba758b1.jpg)
+
 
 4. Open the script and replace :
 
 mail="my_email" with your mail address
 For example : mail="jdeslandes@datawords.com"
+![CleanShot 2023-05-04 at 5 14 54](https://user-images.githubusercontent.com/47465584/236251937-016bfe0c-31d2-4954-af77-1108a282260b.jpg)
+
 
 5. Save the file
 
-That's it, you can call the script using "path" 
+That's it, you can call the script using opt + space and type "path"
+![CleanShot 2023-05-04 at 5 18 09](https://user-images.githubusercontent.com/47465584/236252568-86f52972-735e-44ff-92ad-824f2ed1c880.jpg)
+
