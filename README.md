@@ -16,6 +16,7 @@ If you are not on the finder and you have a Google Drive link in the clipboard, 
 4. Open the script and replace :
 
 mail="my_email" with your mail address
+
 For example : mail="jdeslandes@datawords.com"
 ![CleanShot 2023-05-04 at 5 14 54](https://user-images.githubusercontent.com/47465584/236251937-016bfe0c-31d2-4954-af77-1108a282260b.jpg)
 
@@ -25,3 +26,6 @@ For example : mail="jdeslandes@datawords.com"
 That's it, you can call the script using opt + space and type "path"
 ![CleanShot 2023-05-04 at 5 18 09](https://user-images.githubusercontent.com/47465584/236252568-86f52972-735e-44ff-92ad-824f2ed1c880.jpg)
 
+If you're on the Finder with on the drive, it will convert the path to WINDOWS path and put it on the clipboard
+
+If you're not on the Finder and on you have a WINDOWS path on your clipboard, it will convert the path to MAC and put it on the clipboard
