@@ -11,8 +11,18 @@
 # Documentation: Converted Google Drive macOS paths into windows and vice versa
 # @raycast.author Jb Deslandes
 
-mail="USERNAME@datawords.com"
-mac_user="USERNAME"
+# ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+mail="my_email"
+# ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️
+
+mac_user=$(whoami)
+lang=$(defaults read -g AppleLanguages)
+if [[ $lang == *"fr-FR"* ]]; then
+  drive_mac="Drive partagés"
+elif [[ $lang == *"en-EN"* ]]; then
+  drive_mac="Shared drives"
+fi
+drive_windows="Shared drives"
 
 active_app=$(osascript -e 'tell application "System Events" to get name of first application process whose frontmost is true')
 
@@ -29,20 +39,20 @@ if [[ "$active_app" == "Finder" ]]; then
     exit 1
   fi
 
-  converted_path="G:/Shared drives/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/Shared drives/}"
+  converted_path="G:/$drive_windows/${path#/Users/$mac_user/Library/CloudStorage/GoogleDrive-$mail/$drive_mac/}"
   converted_path="${converted_path//\//\\}"
 
-  echo "$converted_path" | pbcopy
-  echo "The path was copied in the clipboard."
+  echo -n "$converted_path" | pbcopy
+  echo "The path was converted for WINDOWS and copied in the clipboard."
 
 else
   clipboard=$(pbpaste)
 
   if [[ $clipboard == G:* ]]; then
-    path_converted=$(echo $clipboard | sed -e 's/\\/\//g' -e "s/G:\/Shared drives\//\/Users\/$mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/Shared drives\//g" )
+    path_converted=$(echo $clipboard | sed -e 's/\\/\//g' -e "s/G:\/$drive_windows\//\/Users\/$mac_user\/Library\/CloudStorage\/GoogleDrive-$mail\/$drive_mac\//g" )
 
-    echo "$path_converted" | pbcopy
-    echo "The path was converted and copied to clipboard."
+    echo -n "$path_converted" | pbcopy
+    echo "The path was converted for MAC and copied in the clipboard."
   else
     echo "The clipboard does not contain a Google Drive path."
     exit 1
