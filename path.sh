@@ -12,7 +12,7 @@
 # @raycast.author Jb Deslandes
 
 # ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
-mail="my_email"
+mail="jmy_email"
 # ⬆️⬆️⬆️⬆️⬆️⬆️⬆️
 
 mac_user=$(whoami)
@@ -38,7 +38,7 @@ active_app=$(osascript -e 'tell application "System Events" to get name of first
 if [[ "$active_app" == "Finder" ]]; then
   path=$(osascript -e 'tell application "Finder" to get POSIX path of (target of front window as alias)')
 
-  special_chars=("\\/" "(" ")" "=" "+" "¨" "^" "°" "*" "‘" "«" "»" "°" "{" "}" "[" "]" "<" ">" "|" "~" "*" "%" "$" "€" "?" ":" ";" "," "#" "\`" "'" "\"")
+  special_chars=("\\/" "<" ">" ":" "“" "\"" "|" "?" "*")
   for char in "${special_chars[@]}"; do
     if [[ $path == *"\\"* ]]; then
       echo "The path contains a backslash. Please remove it."
@@ -46,11 +46,8 @@ if [[ "$active_app" == "Finder" ]]; then
     elif [[ $path == *"\""* ]]; then
       echo "The path contains a double quote. Please remove it."
       exit 1
-    elif [[ $path == *"‘"* ]]; then
-      echo "The path contains a simple quote. Please remove it."
-      exit 1
-    elif [[ $path == *"'"* ]]; then
-      echo "The path contains a simple quote. Please remove it."
+    elif [[ $path == *"\“"* ]]; then
+      echo "The path contains a double quote. Please remove it."
       exit 1
     elif [[ $path == *"$char"* ]]; then
       echo "The path contains the character '$char'. Please remove it."
