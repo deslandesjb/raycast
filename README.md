@@ -13,7 +13,8 @@ If you are not on the Finder and you have a WINDOWS Google Drive path in the cli
 
 3. Select all field as follow and save it where you want, for example Documents (you'll have to edit the file):
 
-![CleanShot 2023-05-04 at 5 17 11](https://user-images.githubusercontent.com/47465584/236252355-f94e4227-16f7-439e-81f6-57f8bba758b1.jpg)
+![CleanShot 2023-05-05 at 5 18 27@2x](https://user-images.githubusercontent.com/47465584/236499180-4f12d964-e374-454f-91f8-15d77d71a63f.jpg)
+
 
 
 4. Open the script and replace :
@@ -22,7 +23,8 @@ mail="*my_email*" with your mail address
 
 For example : mail="jdeslandes@datawords.com"
 
-![CleanShot 2023-05-04 at 5 14 54](https://user-images.githubusercontent.com/47465584/236251937-016bfe0c-31d2-4954-af77-1108a282260b.jpg)
+![CleanShot 2023-05-05 at 5 19 13@2x](https://user-images.githubusercontent.com/47465584/236499281-113b2c4d-b98f-4c1c-a139-6eab854f4013.jpg)
+
 
 
 5. Save the file
