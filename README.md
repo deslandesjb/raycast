@@ -28,4 +28,4 @@ That's it, you can call the script using opt + space and type "path"
 
 If you're on the Finder with on the drive, it will convert the path to WINDOWS path and put it on the clipboard
 
-If you're not on the Finder and on you have a WINDOWS path on your clipboard, it will convert the path to MAC and put it on the clipboard
+If you're not on the Finder and on you have a WINDOWS path on your clipboard, it will convert the path to MAC and open it on the finder
