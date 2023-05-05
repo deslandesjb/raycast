@@ -12,7 +12,7 @@
 # @raycast.author Jb Deslandes
 
 # ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
-mail="jmy_email"
+mail="my_email"
 # ⬆️⬆️⬆️⬆️⬆️⬆️⬆️
 
 mac_user=$(whoami)
