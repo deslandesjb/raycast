@@ -11,7 +11,7 @@ If you are not on the Finder and you have a WINDOWS Google Drive path in the cli
 
 ![CleanShot 2023-04-13 at 19 13 13](https://user-images.githubusercontent.com/47465584/231834834-68c5a745-4378-4bb2-9c14-60e934d7ac71.jpg)
 
-3. Template is Bash, mode Silent, Title "Path" and save it where you want, for example Documents (you'll have to edit the file):
+3. Template is **Bash**, mode **Silent**, Title "**Path**" and save it where you want, for example Documents (you'll have to edit the file):
 
 ![CleanShot 2023-05-05 at 5 18 27@2x](https://user-images.githubusercontent.com/47465584/236499180-4f12d964-e374-454f-91f8-15d77d71a63f.jpg)
 
