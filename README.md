@@ -1,11 +1,13 @@
 # Raycast - Convert Google Drive path
 
-## How the script works
+## Convert Google Drive path
+
+### How the script works
 If you are on the Finder and on a Google Drive folder, then convert the MAC path to a WINDOWS path, and put the converted path to the clipboard
 
 If you are not on the Finder and you have a WINDOWS Google Drive path in the clipboard, convert the WINDOWS path to MAC path and open in on the Finder
 
-## How to install
+### How to install
 1. Install Raycast https://www.raycast.com/
 2. Open Raycast (option + space), under Extensions create a new Script Command
 
@@ -39,3 +41,9 @@ If you're not on the Finder and on you have a WINDOWS path on your clipboard, it
 
 
 Many thanks Florine Bourassin for your help 😆
+
+## Convert Clarins URL
+Copy a Clarins URL and choose the destination (prod / staging / stg)
+
+## Create Zip file
+Create ZIP files and move them to different folders
